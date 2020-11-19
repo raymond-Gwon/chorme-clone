@@ -26,11 +26,11 @@ function paintToDo(text){
     const toDo_delBtn = document.createElement("button");
     const toDo_span = document.createElement("span");
     const newObjId = toDoLists.length + 1;
-    toDo_delBtn.innerText = "※";
+    toDo_delBtn.innerText = "X";
     toDo_delBtn.addEventListener("click",deleteToDo);
     toDo_span.innerText = text;
-    toDo_li.appendChild(toDo_delBtn);
     toDo_li.appendChild(toDo_span);
+    toDo_li.appendChild(toDo_delBtn);
     toDo_li.id = newObjId;
     toDoList.appendChild(toDo_li);
     const toDoObj = {
